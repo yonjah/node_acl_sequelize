@@ -1,0 +1,44 @@
+{
+  "name": "acl-sequelize",
+  "version": "0.1.0",
+  "description": "Sequelize Backend for Node ACL",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "mocha test/runner.js --reporter spec"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/robottokauf3/node_acl_sequelize.git"
+  },
+  "keywords": [
+    "middleware",
+    "acl",
+    "sequelize",
+    "postgres",
+    "mysql"
+  ],
+  "author": "Robert Kaufmann III <rok3@rok3.me>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/robottokauf3/node_acl_sequelize/issues"
+  },
+  "devDependencies": {
+    "acl": "^0.4.7",
+    "chai": "~1.10.0",
+    "mocha": "^2.0.1",
+    "mysql": "^2.6.1",
+    "sequelize": "^2.0.5"
+  },
+  "homepage": "https://github.com/robottokauf3/node_acl_sequelize",
+  "dependencies": {
+    "bluebird": "^2.9.24",
+    "lodash": "^3.2.0"
+  },
+  "peerDependencies": {
+    "sequelize": "^2.0.5",
+    "acl": "^0.4.7"
+  }
+}
