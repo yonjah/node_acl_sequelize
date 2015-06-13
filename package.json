@@ -30,7 +30,7 @@
     "chai": "~1.10.0",
     "mocha": "^2.0.1",
     "mysql": "^2.6.1",
-    "sequelize": "^2.0.5"
+    "sequelize": "^3.2.0"
   },
   "homepage": "https://github.com/yonjah/node_acl_sequelize",
   "dependencies": {
@@ -38,7 +38,7 @@
     "lodash": "^3.2.0"
   },
   "peerDependencies": {
-    "sequelize": "^2.0.5",
+    "sequelize": "^3.2.0",
     "acl": "^0.4.7"
   }
 }
