@@ -39,6 +39,11 @@ ACL-Sequelize will automatically register and sync needed schemes
 if for some reason you need to register your own tables and the schema override parameters are not good enough you can register the schemes yourself before instiating the `backend`. ACL-Sequelize will use the existing schema instead of adding a new one (Register schema should follow `prefix`+`bucket_name` convention and have key, value columns)
 
 ## Testing
+### Test setup
+The test database connection settings are in the `test/runner.js`.
+The current setting expect a local `mysql` server with passwordless `root` account and `test` database.
+
+### Running tests
 ```javascript
 npm test
 ```
