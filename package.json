@@ -34,7 +34,6 @@
   },
   "homepage": "https://github.com/yonjah/node_acl_sequelize",
   "dependencies": {
-    "bluebird": "^2.9.24",
     "lodash": "^3.2.0"
   },
   "peerDependencies": {
