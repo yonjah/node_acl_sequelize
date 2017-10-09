@@ -7,7 +7,9 @@
     "test": "test"
   },
   "scripts": {
-    "test": "mocha test/runner.js --reporter spec"
+    "test": "mocha test/runner.js",
+    "cover": "nyc --reporter=lcov --reporter=text mocha 'test/runner.js'",
+    "lint": "eslint lib/ test/"
   },
   "repository": {
     "type": "git",
@@ -28,8 +30,11 @@
   "devDependencies": {
     "acl": "^0.4.7",
     "chai": "~1.10.0",
+    "eslint": "^4.8.0",
     "mocha": "^2.0.1",
     "mysql": "^2.6.1",
+    "mysql2": "^1.4.2",
+    "nyc": "^11.2.1",
     "sequelize": "^3.2.0"
   },
   "homepage": "https://github.com/yonjah/node_acl_sequelize",

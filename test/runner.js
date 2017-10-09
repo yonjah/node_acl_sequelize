@@ -15,7 +15,7 @@ describe('Sequelize - Default', function () {
           null,
           {
             logging: false,
-            dialect: 'mariadb'
+            dialect: 'mysql'
           }
         ), {
           prefix: 'acl_'
