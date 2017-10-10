@@ -14,6 +14,7 @@ describe('Sequelize - Default', function () {
           'root',
           null,
           {
+            operatorsAliases: false,
             logging: false,
             dialect: 'mysql'
           }
@@ -24,6 +25,10 @@ describe('Sequelize - Default', function () {
     done();
   });
   run();
+  after(function (done) {
+    this.backend.db.close();
+    done();
+  })
 });
 
 
