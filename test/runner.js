@@ -1,11 +1,11 @@
 /* globals describe,before*/
-"use strict";
-var tests  = require('./tests'),
+'use strict';
+let tests  = require('./tests'),
     AclSeq = require('../');
 
-describe('Sequelize - Default', function () {
+describe('Sequelize - Default', () => {
   before(function (done) {
-    var self = this,
+    let self = this,
         Sequelize = require('sequelize');
 
     self.backend = new AclSeq(
@@ -28,12 +28,12 @@ describe('Sequelize - Default', function () {
   after(function (done) {
     this.backend.db.close();
     done();
-  })
+  });
 });
 
 
-function run() {
-  Object.keys(tests).forEach(function (test) {
+function run () {
+  Object.keys(tests).forEach(test => {
     tests[test]();
   });
 }
