@@ -25,6 +25,10 @@ describe('Sequelize - Default', function () {
     done();
   });
   run();
+  after(function (done) {
+    this.backend.db.close();
+    done();
+  })
 });
 
 
