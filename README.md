@@ -23,11 +23,11 @@ npm install acl-sequelize
     Acl       = require('acl');
     Sequelize = require('sequelize'),
     AclSeq    = require('acl-sequelize');
-    db        = new Sequelize( 'DB', 'USER', 'PASSWORD'),    
-    acl       = new Acl(new AclSeq(db, { prefix: 'acl_' }));
+    db        = new Sequelize( 'DB', 'USER', 'PASSWORD'),
+    acl       = new Acl(new AclSeq(db, { prefix: 'acl_' }, Sequelize));
 ```
 
-## Extra Options 
+## Extra Options
 The second parameter sent to the backend constructor can have supports the following options -
 
 `prefix` - prefix for table names in the database _default ''_
@@ -50,7 +50,6 @@ npm test
 
 ## Known Issues
 - default schema limit each column 255 chars, if you have a lot of resources / permissions / complex hierarchy, You'll probably need to set your own schema with higher limit.
-- node ACL has a race condition bug I would avoid setting multiple permissions until the [issue](https://github.com/OptimalBits/node_acl/pull/112) is resolved
-- I haven't done any performance tweaks, this can probably be implemented in a much more efficient way using relational schema and JOINS, but I'm note sure node ACL API is flexible enough to make it beneficial 
+- I haven't done any performance tweaks, this can probably be implemented in a much more efficient way using relational schema and JOINS, but I'm not sure node ACL API is flexible enough to make it beneficial
 
 P.S Thanks for Robert Kaufmann III <rok3@rok3.me> who originally registered the npm module.
