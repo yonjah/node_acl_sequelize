@@ -35,14 +35,14 @@
     "mysql": "^2.6.1",
     "mysql2": "^1.4.2",
     "nyc": "^11.2.1",
-    "sequelize": ">=3.0.0"
+    "sequelize": ">=5.0.0"
   },
   "homepage": "https://github.com/yonjah/node_acl_sequelize",
   "dependencies": {
     "lodash": "^4.17.5"
   },
   "peerDependencies": {
-    "sequelize": ">=3.0.0",
+    "sequelize": ">=5.0.0",
     "acl": "^0.4.7"
   }
 }
