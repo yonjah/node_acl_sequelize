@@ -1,3 +1,6 @@
+[![Build Status](https://travis-ci.com/BigGillyStyle/node_acl_sequelize.svg?branch=master)](https://travis-ci.com/BigGillyStyle/node_acl_sequelize)
+[![Known Vulnerabilities](https://snyk.io/test/github/{username}/{repo}/badge.svg)](https://snyk.io/test/github/{username}/{repo})
+
 # Node Acl Sequelize Backend
 _acl-sequelize_
 
