@@ -20,7 +20,8 @@ describe('Sequelize - Default', () => {
           }
         ), {
           prefix: 'acl_'
-        }
+        },
+        Sequelize
       );
     done();
   });

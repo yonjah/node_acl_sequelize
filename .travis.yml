@@ -16,9 +16,9 @@ before_install:
 
 script:
   - 'if [ $SEQ_VERSION ]; then npm install sequelize@^$SEQ_VERSION.0.0 || echo "done"; fi'
-  - "if [ $LINT ]; then npm run lint; fi"
-  - "if [ $COVERAGE ]; then npm run cover && bash <(curl -s https://codecov.io/bash) -f coverage/lcov.info; fi"
-  - "if [ $RUN_TEST ]; then npm run test; fi"
+  - 'if [ $LINT ]; then npm run lint; fi'
+  - 'if [ $COVERAGE ]; then npm run cover && bash <(curl -s https://codecov.io/bash) -f coverage/lcov.info; fi'
+  - 'if [ $RUN_TEST ]; then npm run test; fi'
 
 jobs:
   include:
@@ -26,24 +26,19 @@ jobs:
       node_js: 6
       env:
         - RUN_TEST=true
-        - SEQ_VERSION=3
-    - stage: tests
-      node_js: 6
-      env:
-        - RUN_TEST=true
-        - SEQ_VERSION=4
-    - stage: tests
-      node_js: 7
-      env: RUN_TEST=true
+        - SEQ_VERSION=5
     - stage: tests
       node_js: 8
       env: RUN_TEST=true
     - stage: tests
-      node_js: node
+      node_js: 10
+      env: RUN_TEST=true
+    - stage: tests
+      node_js: 12
       env: RUN_TEST=true
     - stage: coverage
-      node_js: 6
+      node_js: 8
       env: COVERAGE=true
     - stage: lint
-      node_js: 6
+      node_js: 8
       env: LINT=true
