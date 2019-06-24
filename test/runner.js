@@ -1,4 +1,3 @@
-/* globals describe,before*/
 'use strict';
 let tests  = require('./tests'),
     AclSeq = require('../');
