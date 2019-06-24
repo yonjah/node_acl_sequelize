@@ -31,7 +31,9 @@ npm install acl-sequelize
 The second parameter sent to the backend constructor can have supports the following options -
 
 `prefix` - prefix for table names in the database _default ''_
+
 `defaultSchema` - Sequlize Schema settings for all buckets with no specific schema _default schema has two columns key: Primary STRING, value: STRING_
+
 `schema` - Object with Sequlize Schema settings per bucket (meta|parents|permissions|resources|roles|users ) to override default schema
 
 ## Creating tables manually
