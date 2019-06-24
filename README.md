@@ -50,6 +50,9 @@ The current setting expect a local `mysql` server with passwordless `root` accou
 npm test
 ```
 
+### Changelog
+See [changelog file](CHANGELOG.md)
+
 ## Known Issues
 - default schema limit each column 255 chars, if you have a lot of resources / permissions / complex hierarchy, You'll probably need to set your own schema with higher limit.
 - node ACL has a race condition bug I would avoid setting multiple permissions until the [issue](https://github.com/OptimalBits/node_acl/pull/112) is resolved
