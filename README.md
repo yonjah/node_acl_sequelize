@@ -1,6 +1,12 @@
 # Node Acl Sequelize Backend
 _acl-sequelize_
 
+[![npm version](https://img.shields.io/npm/v/acl-sequelize.svg)](https://www.npmjs.com/package/acl-sequelize)
+[![Build Status](https://travis-ci.org/yonjah/node_acl_sequelize.svg?branch=master)](https://travis-ci.org/yonjah/node_acl_sequelize)
+[![codecov](https://codecov.io/gh/yonjah/node_acl_sequelize/branch/master/graph/badge.svg)](https://codecov.io/gh/yonjah/node_acl_sequelize)
+[![Known Vulnerabilities](https://snyk.io/test/npm/acl-sequelize/badge.svg)](https://snyk.io/test/npm/acl-sequelize)
+[![License](https://img.shields.io/npm/l/acl-sequelize.svg?maxAge=2592000?style=plastic)](https://github.com/yonjah/node_acl_sequelize/blob/master/LICENSE)
+
 [Sequelize](https://github.com/sequelize/sequelize) is an SQL ORM that supports many sql servers (mysql, mariadb, sqlite, postgres and mssql) [OptimalBits/node_acl](https://github.com/OptimalBits/node_acl).
 
 ## Features & Documentation
