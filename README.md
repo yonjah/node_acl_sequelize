@@ -59,6 +59,9 @@ npm test
 ### Changelog
 See [changelog file](CHANGELOG.md)
 
+### Security issues
+This project participates in the Responsible Disclosure Policy program for the Node.js Security Ecosystem. see [security.md](security.md) for more info
+
 ## Known Issues
 - default schema limit each column 255 chars, if you have a lot of resources / permissions / complex hierarchy, You'll probably need to set your own schema with higher limit.
 - node ACL has a race condition bug I would avoid setting multiple permissions until the [issue](https://github.com/OptimalBits/node_acl/pull/112) is resolved
